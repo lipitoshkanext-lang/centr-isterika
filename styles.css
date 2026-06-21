@@ -252,6 +252,24 @@ input {
   margin-top: 30px;
 }
 
+.contact-phone-text {
+  display: grid;
+  gap: 6px;
+  margin-top: 24px;
+}
+
+.contact-phone-text span {
+  color: var(--muted-strong);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-phone-text strong {
+  font-size: 1.24rem;
+  line-height: 1.2;
+}
+
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
