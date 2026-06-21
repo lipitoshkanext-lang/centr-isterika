@@ -1,0 +1,9 @@
+output/
+qa_database.db
+source_home.html
+source_price.html
+price-list.json
+--report-only
+scripts/
+assets/images/
+assets/interiors/

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — ИСТЕРИКА</title>
+  <meta
+    name="description"
+    content="Полный действующий прайс ИСТЕРИКИ: караоке, бар, коктейли, кухня, десерты и VIP-комнаты."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-menu">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="index.html" aria-label="ИСТЕРИКА">
+          <span class="brand-mark">И</span>
+          <span class="brand-copy">
+            <strong>ИСТЕРИКА</strong>
+            <span>menu • karaoke • bar</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav">
+          <a href="index.html#about">Атмосфера</a>
+          <a href="index.html#spaces">Интерьер</a>
+          <a href="menu.html" aria-current="page">Menu</a>
+          <a href="index.html#reviews">Отзывы</a>
+          <a href="index.html#contact">Контакты</a>
+          <a class="button button-primary button-small" href="tel:+79180013810">Забронировать</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu-hero">
+        <div class="container menu-hero-grid">
+          <div class="menu-hero-copy reveal">
+            <span class="section-tag">Menu</span>
+            <h1>Полный прайс в новом виде, но с теми же действующими позициями.</h1>
+            <p>
+              Здесь собраны существующие цены с текущего сайта: караоке, VIP-комнаты, бар, коктейли,
+              кухня, десерты и напитки. Ничего не добавлено от себя.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="tel:+79180013810">Забронировать по телефону</a>
+              <a class="button button-secondary" href="index.html">Вернуться на главную</a>
+            </div>
+          </div>
+
+          <div class="menu-hero-visual reveal">
+            <img src="assets/site/main-hall.jpg" alt="Главный зал клуба ИСТЕРИКА">
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu-browser">
+        <div class="container">
+          <div class="menu-toolbar reveal">
+            <label class="search-field" for="menu-search">
+              <span>Поиск по меню</span>
+              <input id="menu-search" type="search" placeholder="Например: паста, вино, VIP, лонг">
+            </label>
+            <div class="menu-toolbar-meta">
+              <span id="menu-count">0 категорий</span>
+              <a class="button button-secondary button-small" href="#menu-grid">К списку</a>
+            </div>
+          </div>
+
+          <div class="category-chips reveal" id="category-chips"></div>
+          <div class="menu-grid" id="menu-grid"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="site.js"></script>
+  <script src="price-data.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
